@@ -1,0 +1,29 @@
+<mvc:View
+    controllerName="test.formfiori.controller.main"
+    xmlns:mvc="sap.ui.core.mvc"
+    xmlns:core="sap.ui.core"
+    xmlns="sap.m"
+>
+    <Page
+        id="page"
+        title="{i18n>title}"
+    >
+        <content>
+            <core:Fragment
+                fragmentName="test.formfiori.view.fragments.form"
+                type="XML"
+            />
+        </content>
+        <footer>
+            <Toolbar>
+                <ToolbarSpacer />
+                <Button
+                    id="btnSubmit"
+                    press="onSubmit"
+                    text="Guardar"
+                    type="Accept"
+                />
+            </Toolbar>
+        </footer>
+    </Page>
+</mvc:View>
